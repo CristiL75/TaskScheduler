@@ -1,0 +1,147 @@
+{
+  "info": {
+    "name": "TaskManager API Tests",
+    "description": "Collection pentru testarea API-ului TaskManager",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Create Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"action\": \"create\",\n  \"createRequest\": {\n    \"name\": \"Task de test Postman\",\n    \"description\": \"Acesta este primul meu task creat din Postman\"\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/process",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "tasks", "process"]
+        }
+      }
+    },
+    {
+      "name": "2. Get All Tasks",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"action\": \"getall\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/process",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "tasks", "process"]
+        }
+      }
+    },
+    {
+      "name": "3. Get Running Tasks",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"action\": \"getrunning\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/process",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "tasks", "process"]
+        }
+      }
+    },
+    {
+      "name": "4. Schedule Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"action\": \"schedule\",\n  \"scheduleRequest\": {\n    \"taskId\": \"REPLACE_WITH_TASK_ID\"\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/process",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "tasks", "process"]
+        }
+      }
+    },
+    {
+      "name": "5. Unschedule Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"action\": \"unschedule\",\n  \"taskId\": \"REPLACE_WITH_TASK_ID\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/process",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "tasks", "process"]
+        }
+      }
+    },
+    {
+      "name": "6. Delete Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"action\": \"delete\",\n  \"taskId\": \"REPLACE_WITH_TASK_ID\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tasks/process",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "tasks", "process"]
+        }
+      }
+    }
+  ]
+}

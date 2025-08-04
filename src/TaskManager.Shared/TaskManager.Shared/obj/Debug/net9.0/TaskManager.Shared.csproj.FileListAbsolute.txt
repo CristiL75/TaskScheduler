@@ -1,0 +1,12 @@
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\bin\Debug\net9.0\TaskManager.Shared.deps.json
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\bin\Debug\net9.0\TaskManager.Shared.dll
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\bin\Debug\net9.0\TaskManager.Shared.pdb
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\TaskManager.Shared.csproj.AssemblyReference.cache
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\TaskManager.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\TaskManager.Shared.AssemblyInfoInputs.cache
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\TaskManager.Shared.AssemblyInfo.cs
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\TaskManager.Shared.csproj.CoreCompileInputs.cache
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\TaskManager.Shared.dll
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\refint\TaskManager.Shared.dll
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\TaskManager.Shared.pdb
+C:\Users\cristian.latcu\Desktop\TaskScheduler\src\TaskManager.Shared\TaskManager.Shared\obj\Debug\net9.0\ref\TaskManager.Shared.dll

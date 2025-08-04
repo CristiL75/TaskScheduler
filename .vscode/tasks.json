@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build TaskManager Solution",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"build"
+			],
+			"group": "build",
+			"problemMatcher": [
+				"$msCompile"
+			]
+		},
+		{
+			"label": "Run Scheduler Service",
+			"type": "shell",
+			"command": "dotnet",
+			"args": ["run"],
+			"options": {
+				"cwd": "${workspaceFolder}/src/TaskManager.Scheduler/TaskManager.Scheduler"
+			},
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": ["$msCompile"]
+		},
+		{
+			"label": "Run API Service",
+			"type": "shell",
+			"command": "dotnet",
+			"args": ["run"],
+			"options": {
+				"cwd": "${workspaceFolder}/src/TaskManager.Api/TaskManager.Api"
+			},
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": ["$msCompile"]
+		},
+		{
+			"label": "Start All Services",
+			"dependsOrder": "parallel",
+			"dependsOn": [
+				"Run Scheduler Service",
+				"Run API Service"
+			],
+			"group": "build"
+		}
+	]
+}

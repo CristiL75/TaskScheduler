@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+option csharp_namespace = "TaskManager.Shared.Grpc";
+
+package taskmanager;
+
+// Serviciul gRPC pentru comunicarea între API și Scheduler
+service TaskService {
+  // Operațiuni CRUD pentru task-uri
+  rpc CreateTask(CreateTaskGrpcRequest) returns (TaskGrpcResponse);
+  rpc UpdateTask(UpdateTaskGrpcRequest) returns (UpdateTaskGrpcResponse);
+  rpc DeleteTask(DeleteTaskGrpcRequest) returns (DeleteTaskGrpcResponse);
+  rpc GetAllTasks(GetAllTasksGrpcRequest) returns (GetAllTasksGrpcResponse);
+  rpc GetRunningTasks(GetRunningTasksGrpcRequest) returns (GetRunningTasksGrpcResponse);
+}
+
+// Request/Response messages
+message CreateTaskGrpcRequest {
+  string name = 1;
+  string description = 2;
+}
+
+message UpdateTaskGrpcRequest {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+}
+
+message TaskGrpcResponse {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  string created_at = 4;
+  string scheduled_at = 5;
+  bool is_running = 6;
+  string status = 7;
+}
+
+message DeleteTaskGrpcRequest {
+  string id = 1;
+}
+
+message DeleteTaskGrpcResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message UpdateTaskGrpcResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message GetAllTasksGrpcRequest {
+  // Empty pentru moment
+}
+
+message GetAllTasksGrpcResponse {
+  repeated TaskGrpcResponse tasks = 1;
+}
+
+message GetRunningTasksGrpcRequest {
+  // Empty pentru moment
+}
+
+message GetRunningTasksGrpcResponse {
+  repeated TaskGrpcResponse tasks = 1;
+}
